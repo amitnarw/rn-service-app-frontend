@@ -94,12 +94,12 @@ const Register = ({navigation}: any) => {
           setPhone(prev => ({...prev, error: 'Phone number already exists'}));
           return;
         } else {
-            Toast.show({
-                type: 'error',
-                text1: 'Error',
-                text2: data.error,
-            });
-            return;
+          Toast.show({
+            type: 'error',
+            text1: 'Error',
+            text2: data.error,
+          });
+          return;
         }
       }
       showSuccessToast();

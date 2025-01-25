@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import PasswordReset from './pages/PasswordReset';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
+import MyProfile from './pages/MyProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,7 @@ const App = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="PasswordReset" component={PasswordReset} />
+        <Stack.Screen name="MyProfile" component={MyProfile} />
       </Stack.Navigator>
       <Toast />
     </NavigationContainer>
